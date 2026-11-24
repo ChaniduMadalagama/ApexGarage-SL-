@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app/
+        - config/
+        - database/
+        - routes/
+
+    # Enforce strict static analysis at Level 6 (Requirement: Level 5 or higher)
+    level: 6
+
+    parallel:
+        maximumNumberOfProcesses: 1
+
+    ignoreErrors: []
